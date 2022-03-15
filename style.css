@@ -1,0 +1,272 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    background-color: rgb(170, 167, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.flex {
+    max-width:1000px;
+    width: 100%;
+    margin: 50px;
+    display: flex;
+    border:1px solid purple;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  }
+
+
+
+
+  .flex .left_sidan {
+      position: relative;
+      background: rgb(68, 150, 218);
+      padding: 40px;
+      min-width: 400px;
+  }
+
+  .profil {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+  
+}
+
+.profil .img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profil .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profil h2 {
+    color: rgb(5, 7, 95);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profil h2 span {
+    color: rgb(19, 9, 107);
+    font-size: 1rem;
+    font-weight: 100;
+    text-transform: capitalize;
+}
+.profil p {
+    text-align: left;
+    color: #fff;
+}
+
+.personligt {
+    padding-top: 40px;
+}
+
+.info {
+    color: rgb(9, 9, 75);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.text {
+   color: rgb(197, 186, 186);
+}
+
+
+
+
+.personligt ul {
+    position: relative;
+}
+
+.personligt ul li {
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align:left;
+}
+
+.personligt ul li .item {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: gainsboro;
+}
+
+.personligt ul li span {
+    color: white;
+    font-weight: 300;
+}
+
+.personligt .utbildning li {
+    margin-bottom: 15px;
+  }
+
+.percent {
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: rgb(20, 22, 112);
+    display: block;
+    margin-top: 5px;
+}
+
+.flex .right_sidan {
+    position: relative;
+    background: #fff;
+    padding: 40px;
+}
+
+.om {
+    margin-bottom: 50px;
+}
+
+.om:last-child {
+    margin-bottom: 0;
+}
+
+.title {
+    color: darkblue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    padding-top: 20px;
+}
+
+.title i,ol i {
+    margin-right: 9px;
+}
+
+.om .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.om .box .tid {
+    min-width: 150px;
+}   
+
+.h5 {
+    text-transform: uppercase;
+    color: mediumpurple;
+    font-weight: 800;
+}
+
+.om .box h4 {
+    text-transform: capitalize;
+    color: darkturquoise;
+    font-size: 16px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: lightgray;
+    font-weight: 500;
+}
+
+#persiskakompetenser {
+    width:100%
+}
+
+#kurdiskakompetenser {
+    width: 100%;
+}
+
+#turkiskakompetenser {
+    width: 90%;
+}
+
+#svenskakompetenser {
+    width: 80%;
+}
+
+#engelskakompetenser {
+    width: 70%;
+}
+
+#HTMLkompetenser {
+    width: 70%;
+}
+#CSSkompetenser {
+    width: 70%;
+}
+#PHPkompetenser{
+    width: 50%;
+
+}
+#databasekompetenser{
+    width: 60%;
+
+}
+
+.om ol {
+    list-style-position: inside;
+}
+
+table {
+    width: 100%;
+}
+
+td:last-child {
+    width: 70%;
+}
+
+footer {
+    text-align: center;
+    color: white;
+}
+
+footer >p {
+    color: rgb(41, 185, 204);
+}
+
+@media screen and (max-width:769px) {
+    .flex {
+        flex-direction: column;
+        margin:20px
+    }
+    .flex .left_sidan {
+        min-width: 100%;
+        padding: 10px;
+    }
+    .om .box .tid {
+        min-width: 50px;
+    }
+}

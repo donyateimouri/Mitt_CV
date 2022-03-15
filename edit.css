@@ -1,0 +1,25 @@
+body{
+        background-color: rgb(170, 167, 167);
+       position: fixed;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+.paragraph{
+    text-align: center;
+    font-weight: bold;
+   margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    
+    color: white;
+    margin-top: 600px;
+   margin-left: 650px;
+
+}
+
+
+
